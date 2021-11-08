@@ -7,7 +7,7 @@ module.exports = function(io){
 
     //Socket es conexión con un solo cliente
     socket.on("Mensaje Enviado", function(data){
-        console.log(data);
+        io.sockets.emit("Nuevo Mensaje", data);
     });
   });
 }

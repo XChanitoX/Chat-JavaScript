@@ -14,4 +14,10 @@ $(function() {
         socket.emit("Mensaje Enviado", $messageBox.val());
         $messageBox.val('');
     });
+
+    //Agregamos los mensajes visualmente al chat
+    socket.on("Nuevo Mensaje", function(data) {
+        $chat.append(data + "<br/>");
+    });
+
 })
