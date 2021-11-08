@@ -4,18 +4,6 @@ body {
     background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.switch {
-    background: #343D5B;
-    border-radius: 1000px;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    outline: none;
-
-    span{
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
+#contentWrap{
+    display: none;
 }
